@@ -8,7 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-section {
+.hero {
   min-height: 100vh;
 }
 
@@ -108,7 +108,9 @@ section {
     font-size: 20px;
 }
 
-
+.descr {
+  height: 85vh;
+}
 
 .descr_title {
     font-size: 60px;
@@ -116,4 +118,22 @@ section {
     text-transform: uppercase;
     text-align: center;
     margin-top: 185px;
+}
+
+.descr_features {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.descr_item {
+  width: 50%;
+  padding: 23px;
+  border: 1px solid #C4C4C4;
+  margin: 30px 15px;
+}
+
+.descr_item__text {
+  float: left;
 }
