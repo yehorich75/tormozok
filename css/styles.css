@@ -1,11 +1,12 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero {
@@ -18,52 +19,51 @@ body {
   width: 100%;
   position: fixed;
   padding: 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   z-index: 100;
 }
 
-.logo {
-  flex: 1;
+.hero_header__mail, .hero_header__phone {
+  padding-left: 55px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
 }
 
-.hero_header__mail,
-.hero_header__phone {
-    padding-left: 55px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero_header__mail:hover,
-.hero_header__phone:hover {
+.hero_header__mail:hover, .hero_header__phone:hover {
   color: #ff8a37;
 }
 
-.hero_header__mail:before {
-content: "";
-display: block;
-background: url(images/icons/feather_mail.svg) no-repeat;
-width: 36px;
-height: 36px;
-float: left;
-margin: -8px 10px 0 0;
-}
-
-.hero_header__phone:before {
-  content: "";
+.hero_header__mail:before, .hero_header__phone:before {
+  content: '';
   display: block;
-  background: url(images/icons/feather_smartphone.svg) no-repeat;
   width: 36px;
   height: 36px;
   float: left;
-  margin: -8px 10px 0 0; 
+  margin: -8px 10px 0 0;
+}
+
+.hero_header__mail:before {
+  background: url(../images/icons/feather_mail.svg) no-repeat;
+}
+
+.hero_header__phone:before {
+  background: url(../images/icons/feather_smartphone.svg) no-repeat;
 }
 
 .hero_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #ff8a37;
   height: 100vh;
@@ -103,18 +103,17 @@ margin: -8px 10px 0 0;
 }
 
 .hero_content__descr span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .hero_content__order {
-  background: url(images/tormozni-trubky-1.png) no-repeat 0 0;
+  background: url(../images/tormozni-trubky-1.png) no-repeat 0 0;
   background-size: cover;
   margin-top: -300px;
   position: relative;
 }
 
-.hero_content__info,
-.hero_content__order {
+.hero_content__info, .hero_content__order {
   width: 50%;
 }
 
@@ -124,7 +123,8 @@ margin: -8px 10px 0 0;
   position: absolute;
   bottom: 7%;
   right: 50%;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   width: 298px;
   padding: 15px 0;
   cursor: pointer;
@@ -140,30 +140,41 @@ margin: -8px 10px 0 0;
   color: #ff8a37;
 }
 
+.logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .descr {
   height: 85vh;
 }
 
 .descr_title {
-    font-size: 60px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 185px;
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 185px;
 }
 
 .descr_features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 80vw;
   margin: 0 auto;
 }
 
 .descr_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: calc(100% / 2 - 30px);
   padding: 23px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   margin: 30px 15px;
 }
 
@@ -173,3 +184,4 @@ margin: -8px 10px 0 0;
   font-style: normal;
   line-height: 1.5;
 }
+/*# sourceMappingURL=styles.css.map */
