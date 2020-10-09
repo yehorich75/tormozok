@@ -8,7 +8,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/hystmodal.min.css" />
     <title>Tormozok</title>
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -28,6 +30,11 @@
       </header>
       <div class="hero_content">
         <div class="hero_content__info">
+          <div class="hero_content__social">
+            <a class="hero_header__facebook" href="#"
+              ><img src="images/icons/feather_facebook.svg" alt="Facebook"
+            /></a>
+          </div>
           <div class="hero_content__text">
             <div class="hero_content__item hero_content__subtitle">
               Tormozok
@@ -43,7 +50,11 @@
           </div>
         </div>
         <div class="hero_content__order">
-          <button type="button" class="hero_content__button">
+          <button
+            type="button"
+            class="hero_content__button"
+            data-hystmodal="#myModal"
+          >
             оформити<br />
             замовлення
           </button>
@@ -107,5 +118,86 @@
         </div>
       </div>
     </section>
+    <footer class="footer"></footer>
+    <div class="hystmodal" id="myModal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div
+          class="hystmodal__window hystmodal__window--form"
+          role="dialog"
+          aria-modal="true"
+        >
+          <button class="hystmodal__close" data-hystclose="">Закрыть</button>
+          <div class="hystmodal__styled">
+            <div class="loginblock__h1">Modal form example</div>
+            <form action="#" method="POST">
+              <div class="formitem">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Your name"
+                  value=""
+                />
+              </div>
+              <div class="formitem">
+                <input
+                  type="email"
+                  name="username"
+                  placeholder="Your E-mail"
+                  value=""
+                />
+              </div>
+              <div class="formitem">
+                <input
+                  type="password"
+                  name="username"
+                  placeholder="Enter password"
+                  value=""
+                />
+              </div>
+              <div class="loginblock__bottom flexi">
+                <label class="formcheckbox">
+                  <input type="checkbox" name="remember" tabindex="0" />
+                  <span class="flexi"
+                    ><i class="checkplace"
+                      ><img
+                        src="https://addmorescripts.github.io/hystModal/img/check.svg"
+                        alt="" /></i
+                    >Remember me</span
+                  >
+                </label>
+                <a href="#" class="loginblock__link">Forget Password</a>
+              </div>
+              <div class="formsubmit">
+                <button
+                  type="submit"
+                  class="button"
+                  onclick="alert('All is OK.'); return false;"
+                >
+                  Submit Form (example)
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/hystmodal.min.js"></script>
+    <script>
+      const myModal = new HystModal({
+        linkAttributeName: 'data-hystmodal',
+        catchFocus: true,
+        waitTransitions: true,
+        closeOnEsc: false,
+        beforeOpen: function (modal) {
+          console.log('Message before opening the modal');
+          console.log(modal); //modal window object
+        },
+        afterClose: function (modal) {
+          console.log('Message after modal has closed');
+          console.log(modal); //modal window object
+        },
+      });
+    </script>
   </body>
 </html>

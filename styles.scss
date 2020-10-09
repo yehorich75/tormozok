@@ -57,6 +57,11 @@ body {
       padding: 80px;
       position: relative;
     }
+    &__social {
+      position: absolute;
+      top: 70px;
+      transform: translateY(70px);
+    }
     &__text {
       position: absolute;
       bottom: 80px;
@@ -148,4 +153,105 @@ body {
       line-height: 1.5;
     }
   }
+}
+
+.footer {
+  height: 30vh;
+  background-color: #2d2d2d;
+}
+
+.hystmodal__window--form {
+  width: 440px;
+  max-width: 100%;
+  background: linear-gradient(216.25deg, #ffffff 0%, #f3f3f3 100%), #fcfcfc;
+  box-shadow: 0px 0px 6px rgba(51, 66, 94, 0.5);
+  padding: 40px 30px;
+}
+
+.hystmodal__styled {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.loginblock__h1 {
+  margin-bottom: 30px;
+  color: #2e3c56;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.formitem {
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.formitem input {
+  outline: none;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 100px #fff;
+  border: 1px solid #dde0e6;
+  box-sizing: border-box;
+  color: #484c53;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.flexi {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginblock__bottom {
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.formcheckbox {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.formcheckbox input {
+  position: absolute;
+  /* visibility: hidden; */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.formcheckbox input + span {
+  height: 21px;
+  color: #8f99aa;
+  font-size: 12px;
+  line-height: 21px;
+  position: relative;
+  align-items: center;
+  user-select: none;
+}
+
+.checkplace {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #dde0e6;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  margin-right: 1rem;
+}
+
+.checkplace img {
+  display: block;
+  max-width: 90%;
+  max-height: 95%;
+  margin: auto;
+  opacity: 0;
 }
