@@ -173,6 +173,30 @@ body {
   line-height: 1.5;
 }
 
+.hystmodal__close:focus {
+  outline: 2px dotted #afb3b9;
+  outline-offset: 2px;
+}
+
+.hystmodal__close {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: -40px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../images/eva_close-fill.svg);
+  background-size: 100% 100%;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+}
+
 .loginblock__h1 {
   margin-bottom: 30px;
   color: #2e3c56;
@@ -255,3 +279,5 @@ body {
   margin: auto;
   opacity: 0;
 }
+
+

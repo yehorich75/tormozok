@@ -1,203 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/hystmodal.min.css" />
-    <title>Tormozok</title>
-    <script src="script.js"></script>
-  </head>
 
-  <body>
-    <section class="hero">
-      <header class="hero_header">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/Logo.svg" alt="Logo" />
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/hystmodal.min.css" />
+  <title>Tormozok</title>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <header class="hero_header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <a class="hero_header__mail" href="mailto:olekseenko01@gmail.com">olekseenko01@gmail.com</a>
+      <a class="hero_header__phone" href="tel:380676613235">+380 67 661 3235</a>
+    </header>
+    <div class="hero_content">
+      <div class="hero_content__info">
+        <div class="hero_content__social">
+          <a class="hero_header__facebook" href="#"><img src="images/icons/feather_facebook.svg" alt="Facebook" /></a>
         </div>
-        <a class="hero_header__mail" href="mailto:olekseenko01@gmail.com"
-          >olekseenko01@gmail.com</a
-        >
-        <a class="hero_header__phone" href="tel:380676613235"
-          >+380 67 661 3235</a
-        >
-      </header>
-      <div class="hero_content">
-        <div class="hero_content__info">
-          <div class="hero_content__social">
-            <a class="hero_header__facebook" href="#"
-              ><img src="images/icons/feather_facebook.svg" alt="Facebook"
-            /></a>
+        <div class="hero_content__text">
+          <div class="hero_content__item hero_content__subtitle">
+            Tormozok
           </div>
-          <div class="hero_content__text">
-            <div class="hero_content__item hero_content__subtitle">
-              Tormozok
-            </div>
-            <h1 class="hero_content__item hero_content__title">
-              Гальмівні<br />
-              трубки
-            </h1>
-            <p class="hero_content__item hero_content__descr">
-              Інтернет-магазин <span>TormozOK</span><br />
-              пропонує трубки для гальмів
-            </p>
-          </div>
-        </div>
-        <div class="hero_content__order">
-          <button
-            type="button"
-            class="hero_content__button"
-            data-hystmodal="#myModal"
-          >
-            оформити<br />
-            замовлення
-          </button>
+          <h1 class="hero_content__item hero_content__title">
+            Гальмівні<br />
+            трубки
+          </h1>
+          <p class="hero_content__item hero_content__descr">
+            Інтернет-магазин <span>TormozOK</span><br />
+            пропонує трубки для гальмів
+          </p>
         </div>
       </div>
-    </section>
-    <section class="descr" id="descr">
-      <h2 class="descr_title">Що ми пропонуємо</h2>
-      <div class="descr_features">
-        <div class="descr_item descr_search">
-          <i class="descr_search__icon">
-            <img src="images/icons/mdi_selection-search.svg" alt="Search" />
-          </i>
-          <div class="descr_item__text">
-            <p>
-              Для экономии Вашего времени подберём нужные детали по номеру
-              кузова автомобиля и предложим разные варианты цены
-              и производителя — только позвоните и дайте задачу.
-            </p>
-          </div>
-        </div>
-        <div class="descr_item descr_delivery">
-          <i class="descr_delivery__icon">
-            <img
-              src="images/icons/mdi_truck-delivery-outline.svg"
-              alt="Delivery"
-            />
-          </i>
-          <div class="descr_item__text">
-            <p>Доставимо до дверей, якщо Ви знаходитесь в Києві.</p>
-            <p>
-              Відправимо перевізником, якщо Ви знаходитесь в будь-якому іншому
-              місті України.
-            </p>
-          </div>
-        </div>
-        <div class="descr_item descr_info">
-          <i class="descr_info__icon">
-            <img
-              src="images/icons/mdi_folder-information-outline.svg"
-              alt="Info"
-            />
-          </i>
-          <div class="descr_item__text">
-            <p>
-              Быстро отреагируем на Ваш заказ из сайта — стоит только оформить
-              его и указать некоторую инфу для отправки
-            </p>
-          </div>
-        </div>
-        <div class="descr_item descr_call">
-          <i class="descr_call__icon">
-            <img src="images/icons/mdi_phone-message-outline.svg" alt="Call" />
-          </i>
-          <div class="descr_item__text">
-            <p>
-              Подбирайте! Звоните! Заказывайте! Подробнее:
-              https://tormozok.in.ua
-            </p>
-          </div>
+      <div class="hero_content__order">
+        <button type="button" class="hero_content__button" data-hystmodal="#myModal">
+          оформити<br />
+          замовлення
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="descr" id="descr">
+    <h2 class="descr_title">Що ми пропонуємо</h2>
+    <div class="descr_features">
+      <div class="descr_item descr_search">
+        <i class="descr_search__icon">
+          <img src="images/icons/mdi_selection-search.svg" alt="Search" />
+        </i>
+        <div class="descr_item__text">
+          <p>
+            Для экономии Вашего времени подберём нужные детали по номеру
+            кузова автомобиля и предложим разные варианты цены
+            и производителя — только позвоните и дайте задачу.
+          </p>
         </div>
       </div>
-    </section>
-    <footer class="footer"></footer>
-    <div class="hystmodal" id="myModal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div
-          class="hystmodal__window hystmodal__window--form"
-          role="dialog"
-          aria-modal="true"
-        >
-          <button class="hystmodal__close" data-hystclose="">Закрыть</button>
-          <div class="hystmodal__styled">
-            <div class="loginblock__h1">Modal form example</div>
-            <form action="#" method="POST">
-              <div class="formitem">
-                <input
-                  type="text"
-                  name="username"
-                  placeholder="Your name"
-                  value=""
-                />
-              </div>
-              <div class="formitem">
-                <input
-                  type="email"
-                  name="username"
-                  placeholder="Your E-mail"
-                  value=""
-                />
-              </div>
-              <div class="formitem">
-                <input
-                  type="password"
-                  name="username"
-                  placeholder="Enter password"
-                  value=""
-                />
-              </div>
-              <div class="loginblock__bottom flexi">
-                <label class="formcheckbox">
-                  <input type="checkbox" name="remember" tabindex="0" />
-                  <span class="flexi"
-                    ><i class="checkplace"
-                      ><img
-                        src="https://addmorescripts.github.io/hystModal/img/check.svg"
-                        alt="" /></i
-                    >Remember me</span
-                  >
-                </label>
-                <a href="#" class="loginblock__link">Forget Password</a>
-              </div>
-              <div class="formsubmit">
-                <button
-                  type="submit"
-                  class="button"
-                  onclick="alert('All is OK.'); return false;"
-                >
-                  Submit Form (example)
-                </button>
-              </div>
-            </form>
-          </div>
+      <div class="descr_item descr_delivery">
+        <i class="descr_delivery__icon">
+          <img src="images/icons/mdi_truck-delivery-outline.svg" alt="Delivery" />
+        </i>
+        <div class="descr_item__text">
+          <p>Доставимо до дверей, якщо Ви знаходитесь в Києві.</p>
+          <p>
+            Відправимо перевізником, якщо Ви знаходитесь в будь-якому іншому
+            місті України.
+          </p>
+        </div>
+      </div>
+      <div class="descr_item descr_info">
+        <i class="descr_info__icon">
+          <img src="images/icons/mdi_folder-information-outline.svg" alt="Info" />
+        </i>
+        <div class="descr_item__text">
+          <p>
+            Быстро отреагируем на Ваш заказ из сайта — стоит только оформить
+            его и указать некоторую инфу для отправки
+          </p>
+        </div>
+      </div>
+      <div class="descr_item descr_call">
+        <i class="descr_call__icon">
+          <img src="images/icons/mdi_phone-message-outline.svg" alt="Call" />
+        </i>
+        <div class="descr_item__text">
+          <p>
+            Подбирайте! Звоните! Заказывайте! Подробнее:
+            https://tormozok.in.ua
+          </p>
         </div>
       </div>
     </div>
+  </section>
+  <footer class="footer"></footer>
+  <div class="hystmodal" id="myModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+        <button class="hystmodal__close" data-hystclose="">Закрыть</button>
+        <div class="hystmodal__styled">
+          <div class="loginblock__h1">Modal form example</div>
+          <form action="#" method="POST">
+            <div class="formitem">
+              <input type="text" name="username" placeholder="Your name" value="" />
+            </div>
+            <div class="formitem">
+              <input type="email" name="username" placeholder="Your E-mail" value="" />
+            </div>
+            <div class="formitem">
+              <input type="password" name="username" placeholder="Enter password" value="" />
+            </div>
+            <div class="formsubmit">
+              <button type="submit" class="button" onclick="alert('All is OK.'); return false;">
+                Submit Form (example)
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/hystmodal.min.js"></script>
-    <script>
-      const myModal = new HystModal({
-        linkAttributeName: 'data-hystmodal',
-        catchFocus: true,
-        waitTransitions: true,
-        closeOnEsc: false,
-        beforeOpen: function (modal) {
-          console.log('Message before opening the modal');
-          console.log(modal); //modal window object
-        },
-        afterClose: function (modal) {
-          console.log('Message after modal has closed');
-          console.log(modal); //modal window object
-        },
-      });
-    </script>
-  </body>
+  <script src="js/hystmodal.min.js"></script>
+  <script>
+    const myModal = new HystModal({
+      linkAttributeName: 'data-hystmodal',
+      catchFocus: true,
+      waitTransitions: true,
+      closeOnEsc: false,
+      beforeOpen: function (modal) {
+        console.log('Message before opening the modal');
+        console.log(modal); //modal window object
+      },
+      afterClose: function (modal) {
+        console.log('Message after modal has closed');
+        console.log(modal); //modal window object
+      },
+    });
+  </script>
+</body>
+
 </html>
